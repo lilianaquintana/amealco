@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>"Amealco" El Pueblo Mágico</title>
+  <style>
+    /* Estilos para el menú desplegable */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Botón del menú */
+    .dropbtn {
+      background-color: #4CAF50; /* Color de fondo */
+      color: white; /* Color de texto */
+      padding: 14px 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* Contenedor del contenido del dropdown (oculto por defecto) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Estilos de los enlaces en el dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Efecto hover para los enlaces */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+    /* Mostrar el dropdown al hacer hover sobre el contenedor */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Cambiar color del botón al hacer hover */
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+    
+    /* Estilos para la pantalla de inicio (splash screen) */
+    #splashScreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("IM/fondo.jpg") no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    
+    .splash-content {
+      text-align: center;
+    }
+    
+    .splash-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    
+    .splash-content p {
+      font-size: 1.5em;
+    }
+    
+    .splash-content button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    
+    .splash-content button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Pantalla de inicio (splash screen) -->
+  <div id="splashScreen">
+    <div class="splash-content">
+      <h1>Bienvenido a Amealco</h1>
+      <p>El Pueblo Mágico</p>
+      <button id="enterButton">Entrar</button>
+    </div>
+  </div>
+  
+  <!-- Menú desplegable -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menú</button>
+      <div class="dropdown-content">
+        <a href="#mision">Misión</a>
+        <a href="#vision">Visión</a>
+        <a href="#valores">Valores</a>
+        <a href="¿Qué es Amealco?">¿Qué es Amealco?</a>
+        <a href="#lugares">Lugares para visitar</a>
+        <a href="#lugares">Lugares para visitar</a>
+        <a href="#lugares">Lugares para visitar</a>
+        <a href="#lugares">Lugares para visitar</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- El contenido de tu página -->
+  <h1>"AMEALCO" EL PUEBLO MÁGICO</h1>
+  <div style="text-align: center;">
+    <img src="IM/AMEALCO.jpg" width="1080px" height="300px" alt="Amealco">
+  </div>
+  
+  <h2 id="mision">¿Porqué hacemos esto?</h2>
+  <h3>Misión</h3>
+  <p>Dar a conocer que es lo que distingue a Amealco de otros sitios, destacando la importancia turística única y enriquecedora que rige a este sitio, brindando un espacio de calidad.</p>
+  
+  <h3 id="vision">Visión</h3>
+  <p>Aumentar la tasa turística que tiene el lugar, reconocido por su autenticidad y conservación de patrimonio cultural, respetando a la comunidad local.</p>
+  
+  <h3 id="valores">Valores</h3>
+  <ul type="circle">
+    <li>Promover el respeto hacia las tradiciones y costumbres de la sociedad.</li>
+    <li>Señalar un sentido de autenticidad que fomente la identidad cultural.</li>
+    <li>Fomentar un turismo responsable y la protección del entorno natural.</li>
+    <li>Garantizar un ambiente seguro, confiable y accesible para todos los visitantes.</li>
+  </ul>
+  
+  <h2>¿Qué es Amealco?</h2>
+  <p>Amealco, es un pueblo que se encuentra en el estado de Querétaro; es un pueblo que contiene raíces otomíes. Su nombre proviene del náhualt Ameyalco o Amellayi, el "Lugar de manantiales", fue originada en 1538 por los españoles. Como en cada pueblo, este cuenta con sus propias tradiciones, cultura, gastronomía y festividades.</p>
+  
+  <h2>¿En dónde se ubica Amealco?</h2>
+  <p>Se encuentra a 45 minutos de San Juan del Río; 1 hora de Querétaro ó a 3 horas de la CDMX. Haz clic sobre la imagen que aparece a continuación, está te llevará a Google Maps para saber exactamente en dónde se encuentra y cómo llegar.</p>
+  <div style="text-align: center;">
+    <a href="https://www.google.com/maps/place/Amealco+de+Bonfil,+Qro./@20.1877534,-100.6763519,9z/data=!4m5!3m4!1s0x85d31afca0304949:0x2fb3d8c312ea0d9c!8m2!3d20.1876421!4d-100.1467011" target="_blank">
+      <img src="IM/BOSQUES.jpg" width="720px" height="256px" alt="Ubicación de Amealco">
+    </a>
+  </div>
+  
+  <h2>Tradiciones, Costumbres y Festividades</h2>
+  <h3>Fabricación de Muñecas</h3>
+  <p>Amealco realiza una producción mensual de muñecas artesanales superior a 200,000 piezas. Es uno de los principales sustentos para las familias otomíes, contando con más de 550 talleres en la zona indígena. Cada muñeca es irrepetible, representando tradición, costumbre y raíces.</p>
+  <p>Las dos comunidades más representativas de esto son Santiago de Mexquititlán y San Ildefonso Tultepec.</p>
+  
+  <h3>Feria Nacional de la Muñeca Artesanal</h3>
+  <p>Este evento reúne en noviembre a artesanos de diversos municipios y estados de la república para exhibir sus muñecas tejidas, reconociendo los valores tangibles e intangibles de esta artesanía.</p>
+  
+  <h3>Feria del Pueblo</h3>
+  <p>Entre los últimos días del mes de abril se celebra en la cabecera municipal la fundación de Amealco, con actividades culturales, sociales, ganaderas y la elección de la Reina de la Feria, tradición que se inició en 1988.</p>
+  
+  <h3>Feria del Libro</h3>
+  <p>Del 14 al 20 de diciembre, en la plaza principal se organiza la feria del libro para impulsar y fortalecer el desarrollo cultural.</p>
+  
+  <h2>Lugares que puedes visitar durante tu viaje a Amealco</h2>
+  <h3>Museo de la Muñeca Artesanal</h3>
+  <p>Este lugar es ideal para conocer la variedad de muñecas artesanales hechas por las familias otomíes de la región. Además, en el museo se pueden observar pinturas elaboradas por artistas locales y apreciar colmillos de mamut encontrados en Amealco.</p>
+  <div style="text-align: center;">
+    <img src="IM/museo.jpeg" width="256px" height="256px" alt="Museo">
+    <img src="IM/black.jpeg" width="256px" height="256px" alt="Museo">
+    <img src="IM/rueda.jpeg" width="256px" height="256px" alt="Museo">
+    <img src="IM/duo.jpeg" width="256px" height="256px" alt="Museo">
+    <img src="IM/simi.jpeg" width="256px" height="256px" alt="Museo">
+    <img src="IM/lio.jpeg" width="256px" height="256px" alt="Museo">
+  </div>
+  
+  <p>También se pueden apreciar algunas pinturas y hasta colmillos de mamut expuestos en este espacio.</p>
+  <div style="text-align: center;">
+    <img src="IM/mamut.jpeg" width="256px" height="256px" alt="Mamut">
+    <img src="IM/colmillo.jpeg" width="256px" height="256px" alt="Colmillo">
+    <img src="IM/pintura.jpeg" width="256px" height="256px" alt="Pintura">
+    <img src="IM/arbol.jpeg" width="256px" height="256px" alt="Árbol">
+    <img src="IM/lele.jpeg" width="256px" height="256px" alt="Lele">
+    <img src="IM/rosa.jpeg" width="256px" height="256px" alt="Rosa">
+    <img src="IM/lele1.jpeg" width="256px" height="256px" alt="Lele">
+    <img src="IM/gato.jpeg" width="256px" height="256px" alt="Gato">
+    <img src="IM/mujer.jpeg" width="256px" height="256px" alt="Mujer">
+  </div>
+  <p>Te dejamos la disponibilidad de horarios para que conozcas más acerca de este museo.</p>
+  <div style="text-align: center;">
+    <img src="IM/horarios.jpeg" width="256px" height="256px" alt="Horarios">
+  </div>
+  
+  <h3>Dunas Rojas</h3>
+  <p>Ubicadas al sureste de Amealco, estas dunas, con una alta concentración de zinc, presentan un tono rojizo. Es ideal ir con botas o botines para evitar ensuciarte, y disfrutar de fotos, trotar o deslizarte, aunque ten en cuenta que tu ropa podría mancharse.</p>
+  <div style="text-align: center;">
+    <img src="IM/zinc.jpeg" width="256px" height="256px" alt="Dunas Rojas">
+    <img src="IM/dun.jpeg" width="256px" height="256px" alt="Dunas">
+    <img src="IM/duna.jpeg" width="256px" height="256px" alt="Dunas">
+    <img src="IM/dunas.jpeg" width="256px" height="256px" alt="Dunas">
+    <video width="256px" height="256px" controls>
+      <source src="VI/video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div style="text-align: center;">
+    <video width="256px" height="256px" controls>
+      <source src="VI/videos.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <h3>Hoky Taller de Muñecas Artesanales</h3>
+  <p>Para asistir a este taller, primero deberás hacer una reservación a los teléfonos: 448-111-8431 o 448-105-8410. Allí podrás disfrutar de una danza tradicional, un té especial y conocer el origen de la muñeca Lele, además de tener la opción de elaborarla tú mismo. También existe una tienda con más artesanías.</p>
+  <div style="text-align: center;">
+    <video width="256px" height="256px" controls>
+      <source src="VI/danza.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p>Posterior a la danza, disfruta de un té tradicional.</p>
+  <div style="text-align: center;">
+    <img src="IM/jose.jpeg" width="256px" height="256px" alt="Taller">
+    <img src="IM/te.jpeg" width="256px" height="256px" alt="Té">
+  </div>
+  <p>También podrás conocer el origen y elaborar tu propia muñeca Lele, y visitar la tienda donde se venden otras artesanías.</p>
+  <div style="text-align: center;">
+    <img src="IM/mu.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/muñ.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/muñe.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/muñec.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/muñeca.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/flor.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/figuras.jpeg" width="256px" height="256px" alt="Artesanías">
+    <img src="IM/tal.jpeg" width="256px" height="256px" alt="Artesanías">
+  </div>
+  <div style="text-align: center;">
+    <video width="256px" height="256px" controls>
+      <source src="VI/mu.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <p>Haz clic en la imagen a continuación para ir al Facebook del taller y obtener más información.</p>
+  <div style="text-align: center;">
+    <a href="https://www.facebook.com/HokyTaller" target="_blank">
+      <img src="IM/hoky.jpeg" width="720px" height="256px" alt="Hoky Taller">
+    </a>
+  </div>
+  
+  <h3>Gastronomía</h3>
+  <p>Este lugar ofrece una gran variedad de dulces artesanales elaborados en una cocina tradicional, además de bebidas, platillos de origen prehispánico y dulces de leche.</p>
+  <div style="text-align: center;">
+    <img src="IM/m.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/ma.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/pan.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/ato.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/hor.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/ela.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/des.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/galle.jpeg" width="256px" height="256px" alt="Gastronomía">
+    <img src="IM/vas.jpeg" width="256px" height="256px" alt="Gastronomía">
+  </div>
+
+  <script>
+    // Al hacer clic en el botón "Entrar", se oculta el splash screen
+    document.getElementById("enterButton").addEventListener("click", function() {
+      document.getElementById("splashScreen").style.display = "none";
+    });
+  </script>
+</body>
+</html>
